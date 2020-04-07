@@ -24,7 +24,7 @@ RUN addgroup -g 1000 minecraft \
   && mkdir -m 777 /data /mods /config /plugins \
   && chown minecraft:minecraft /data /config /mods /plugins /home/minecraft
 
-EXPOSE 25565 25575
+EXPOSE 25565 25575 8123
 
 # hook into docker BuildKit --platform support
 # see https://docs.docker.com/engine/reference/builder/#automatic-platform-args-in-the-global-scope
